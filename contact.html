@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .upper-image {
+      background-image: url('https://images.adsttc.com/media/images/670f/d837/6509/0f00/018c/4ff7/slideshow/BARAKI_MERYA_PHOTO_10____Matthieu_Croizier.jpg?1729091726');
+      background-size: cover;
+      background-position: center center;
+      height: 50vh;  
+      width: 100%;
+      position: fixed; 
+      top: 0;
+      left: 0;
+      z-index: 1; 
+    }
+
+    .background-image {
+      background-image: url('https://www.corian.com/sites/en-us.corian.com/local/cache-vignettes/L1600xH660/commercial-bim-1-dbf7f.jpg?1702418789');
+      background-size: cover;
+      background-position: center bottom; 
+      height: 50vh;
+      width: 100%;
+      position: fixed; 
+      top: 50vh;
+      z-index: 0; 
+    }
+
+    .contact-content {
+      padding: 2rem;
+      position: fixed; 
+      top: 55vh; 
+      left: 5%; 
+      z-index: 2; 
+      width: 60%; 
+      max-width: 1200px; 
+      text-align: left; 
+      color: black; 
+      font-weight: bold;
+    }
+
+    .contact-content p {
+      font-size: 1.75rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .contact-content p span {
+      display: inline-block;
+      min-width: 250px;
+      margin-right: 3rem;
+    }
+
+    footer {
+      color: black; 
+      font-size: 1.35rem;
+      text-align: center;
+      padding: 1.5rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      z-index: 3; 
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <header class="bg-black text-white fixed top-0 left-0 right-0 z-10">
+    <nav class="container mx-auto flex justify-center py-4">
+      <ul class="flex space-x-12">
+        <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+        <li><a href="project.html" class="hover:text-gray-400">Project</a></li>
+        <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+        <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="upper-image"></div>
+
+  <div class="background-image"></div>
+
+  <div class="contact-content">
+    <p><span>Email:</span> Group01@gmail.com</p>
+    <p><span>Address:</span> A.H. BANZON ST, IBAYO, CITY OF BALANGA, BATAAN</p>
+    <p><span>Contact Number:</span> 09080938899</p>
+  </div>
+
+  <footer>
+    <p>Copyright © 2024 Group 1</p>
+  </footer>
+
+</body>
+</html>

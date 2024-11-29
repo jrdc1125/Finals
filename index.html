@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Architecture Design</title>
+  
+  <!-- Google Font Link for Roboto Light -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.0/dist/tailwind.min.css" rel="stylesheet">
+
+  <style>
+    body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url('https://www.corian.com/sites/en-us.corian.com/local/cache-vignettes/L1600xH660/commercial-bim-1-dbf7f.jpg?1702418789');
+  background-size: cover;
+  background-position: top center 20%; 
+  background-attachment: fixed;
+  overflow: hidden; /* Disable scrolling */
+}
+    /* Custom Font and Text Styling */
+    h2 {
+      font-weight: 300; 
+      color: #000000; 
+      font-size: 6rem; 
+    }
+    p {
+      font-size: 2rem; 
+      line-height: 1.8;
+      color: #000000; 
+      max-width: 1000px; 
+      margin: 0 auto;
+    }
+
+    .content-wrapper {
+      padding: 4rem;
+    }
+    .about-text {
+      text-align: center;
+    }
+
+
+    .btn-custom {
+  background-color: #d1d5db; /* light grey background */
+  color: #000000; /* black text */
+  padding: 12px 36px; /* Adjusted padding for size */
+  border-radius: 50px; /* Rounded corners */
+  border: 2px solid #000000; /* Stroke effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  font-weight: 600; /* Slightly bold font */
+  font-size: 1.125rem; /* Button text size */
+  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  margin-top: 20px; /* Adds space between the text and the button */
+}
+
+    .btn-custom:hover {
+      background-color: #b0bec5; /* Slightly darker grey on hover */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+      transform: translateY(-2px); 
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navigation -->
+  <header class="bg-black text-white fixed top-0 left-0 right-0">
+    <nav class="container mx-auto flex justify-center py-4">
+      <ul class="flex space-x-12">
+        <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+        <li><a href="project.html" class="hover:text-gray-400">Project</a></li>
+        <li><a href="about.html" class="hover:text-gray-400">About</a></li>
+        <li><a href="contact.html" class="hover:text-gray-400">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <main class="h-screen flex items-center justify-center">
+    <div class="flex-1 flex flex-col items-center justify-center text-left px-8">
+      <!-- Centered Text and Button -->
+      <h2 class="text-8xl font-light mb-8 text-black">ARCHITECTURE</h2>
+      <h2 class="text-7xl font-light mb-6 text-black">Design</h2>
+      <a href="contact.html">
+        <button class="btn-custom">
+          Start ➝
+        </button>
+      </a>
+    </div>
+    <div class="flex-1 flex items-center justify-center">
+      <img src="https://images.adsttc.com/media/images/670f/d837/6509/0f00/018c/4ff5/slideshow/BARAKI_MERYA_PHOTO_7____Matthieu_Croizier.jpg?1729091706" alt="Architecture Design Example" class="w-full h-full object-cover rounded-lg shadow-lg">
+    </div>
+  </main>
+
+</body>
+</html>
